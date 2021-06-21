@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap');
+
+.leftside, .rightside{
+    
+    height: 50vh;
+    width: 100%;
+    font-family: 'Alegreya SC', serif;
+    font-size: 150%;
+    
+}
+
+@media screen and (min-width:768px)
+{
+    .leftside,.rightside{
+        height: 100vh;
+    }
+}
+
+.leftside {
+    
+    background-image: url('../images/cake.jpg');
+    background-size: cover;
+    background-position: center center;
+    transition: transform .4s; 
+}
+
+.rightside
+{
+    background-image: url('../images/cart.jpg');
+    background-size: cover;
+    transition: transform .4s; 
+    
+}
+
+
+
+
+
+
+.border-button {  
+  
+  border: solid 20px greenyellow; 
+  
+  clip-path: polygon( 
+    calc(0% + 2px) calc(0% + 2px), 
+    calc(100% - 2px) calc(0% + 2px), 
+    calc(100% - 5px) calc(100% - 2px), 
+    calc(0% + 2px) calc(100% - 2px) 
+  );
+  transition: clip-path 0.2s linear;
+}
+
+
+
+
+.button{
+    
+    
+    position: absolute;
+    top:20%;
+    left: 20%;
+    transform: translate(-50%,-50%)
+    
+}
+button{
+    background: black;
+    opacity: 80%;
+    color: #ccc;
+    width:500px;
+    height: 100px;
+    border: 1px solid brown;
+    font-size: 18px;
+    border-radius:4px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+button:focus{
+    outline:none;
+    
+}
+
+button:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background:rgba(255,255,255,.5);
+    width: 60px;
+    height: 100px;
+    left: 0;
+    top:0;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+    
+    
+}
+
+button:after{
+    
+    content: '';
+    display: block;
+    position: absolute;
+    background:rgba(255,255,255,.2);
+    
+    width: 30px;
+    height:100%;
+    left:30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+    
+}
+
+
+button:hover{
+    background: #338033;
+    cursor:pointer;
+}
+button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+
+button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity:1s;
+    transition: .7s;
+}
+
+
+.rightside:hover,.leftside:hover{
+    
+    transform: scale(1.1); 
+}
+

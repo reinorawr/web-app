@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Shadows+Into+Light&display=swap');
+
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+    line-height: 1.5;
+    margin: 0;
+    background-color: black;
+}
+
+/* Global */
+.container{
+    
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    color: white;
+    
+}
+#this{
+    color: blue;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#one{
+    width: 200px;
+    height: 200px;
+    
+}
+
+header{
+    background: grey;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: blue solid 3px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+    
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+
+header .highlight,header .current a{
+    color: black;
+    /* shadows into light font*/
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    
+}
+
+
+
+header .lowlight, header .current a{
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    
+}
+
+header a:hover{
+    color: blue;
+    font-weight: bold;
+}
+
+
+/*showcase*/
+
+#showcase{
+    min-height: 400px;
+    text-align: center;
+    color: white;
+    
+}
+
+
+
+#showcase h1{
+    
+    margin-top: 100px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 55px;
+    margin-bottom: 10px;
+    
+    
+}
+
+#showcase p{
+    
+    font-size: 20px;
+}
+
+#social{
+    padding: 15px;
+    color: white;
+    background: grey;
+}
+
+
+#social h1{
+    font-size: 40px;
+    float: left;
+    margin-top: 25px;
+    
+}
+
+#social a{
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+/*button*/
+.border-button {  
+  
+  border: solid 20px greenyellow; 
+  
+  clip-path: polygon( 
+    calc(0% + 2px) calc(0% + 2px), 
+    calc(100% - 2px) calc(0% + 2px), 
+    calc(100% - 5px) calc(100% - 2px), 
+    calc(0% + 2px) calc(100% - 2px) 
+  );
+  transition: clip-path 0.2s linear;
+  
+}
+
+
+
+
+.button{
+    
+    
+    position: absolute;
+    top:20%;
+    left: 20%;
+    transform: translate(-50%,-50%)
+    
+}
+button{
+    background: black;
+    opacity: 80%;
+    color: #ccc;
+    width:200px;
+    height: 100px;
+    border: 1px solid brown;
+    margin-left: 10px;
+    font-size: 18px;
+    border-radius:4px;
+    transition: .6s;
+    overflow: hidden;
+    
+}
+
+button:focus{
+    outline:none;
+    
+}
+
+button:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background:rgba(255,255,255,.5);
+    width: 60px;
+    height: 100px;
+    left: 0;
+    top:0;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+    
+    
+}
+
+button:after{
+    
+    content: '';
+    display: block;
+    position: absolute;
+    background:rgba(255,255,255,.2);
+    
+    width: 30px;
+    height:100%;
+    left:30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+    
+}
+
+
+button:hover{
+    background: #338033;
+    cursor:pointer;
+}
+button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+
+button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity:1s;
+    transition: .7s;
+}
+
+/* boxes */
+
+#boxes{
+    margin-top: 20px;
+    
+}
+
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#boxes.box img{
+    width: 90px;
+}
+
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: whitesmoke;
+    background: grey;
+    text-align: center;
+}
+
+
+
+
+
+
